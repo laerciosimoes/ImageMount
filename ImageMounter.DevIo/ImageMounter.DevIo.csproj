@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Server\GenericProviders\DevioProviderUnmanagedBase.cs" />
+    <None Include="Server\GenericProviders\ProviderSupport.cs" />
+    <None Include="Server\Services\DevioShmService.cs" />
+    <None Include="Server\Services\DevioTcpService.cs" />
+    <None Include="Server\SpecializedProviders\DebugProvider.cs" />
+    <None Include="Server\SpecializedProviders\MultiPartFileStream.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageMounter.Devio.Interop\ImageMounter.Devio.Interop.csproj" />
+    <ProjectReference Include="..\ImageMounter\ImageMounter.csproj" />
+  </ItemGroup>
+
+</Project>
